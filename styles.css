@@ -1,0 +1,148 @@
+/* GLOBAL
+----------------------------*/
+body { 
+    background-color: lavender; 
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.content-wrap {
+    max-width: 800px;
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+img {
+    width: 300px;
+}
+
+/* NAVIGATION
+_____________________________*/
+.nav-wrap{
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+ul {                                    
+    text-align: right;                   
+    list-style: none;
+  
+}
+
+ ul li {                                 
+    font: bold 12px/18px; 
+    font-family:'Times New Roman', Times, serif;           
+    position: relative;               
+    padding: 15px 30px;           
+    background: rgb(134, 132, 243);              
+    cursor: pointer;         
+    display: inline-block;    
+}
+ ul li:hover {                       
+    background-color: rgb(247, 199, 110);             
+    color: #fff;   
+    text-decoration: underline;                  
+}
+ ul li ul {                            
+    padding: 10px;                       
+    position: absolute;           
+    top: 48px;                       
+    left: -10000px;                 
+    display: inline-flex;
+                  
+ }
+ ul li ul li {                        
+    background:rgb(247, 199, 110);           
+    display: block;                
+    color: #fff; 
+    display: inline-flex;           
+}
+ul li ul li:hover { 
+    background: rgb(76, 81, 161); 
+    text-decoration: underline;
+} 
+ul li:hover ul {                 
+    display: block;                
+    left :0px;       
+    text-decoration: underline;                 
+}
+/* PROFILE
+----------------------------*/
+header {
+    background-color: rgb(76, 81, 161);
+}
+h1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 50px;
+    margin: 0;
+    font-family: fantasy;
+    padding: 5px;
+}
+
+.jobtit {
+    color: rgb(219, 206, 255);
+    text-align: center;
+    font-size: medium;
+    margin-top: 0;
+}
+/* COLUMNS
+____________________________*/
+.column {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+.row{
+    max-width: 960px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* IMAGES
+_____________________________*/
+.examples{
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+/* width: 50%; */
+}
+/* CONTACTS
+----------------------------*/
+footer {
+    background-color: rgb(76, 81, 161);
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    
+}
+.contact-list {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    list-style-type: none;
+    font-size: 20px;
+
+}
+.contact-list a {
+    padding: 15px;
+}
+
+.contact-list a:hover {
+    text-decoration: underline;
+}
+.credit {
+    font-size: 10px;
+}
